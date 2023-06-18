@@ -63,40 +63,27 @@
           <?= form_error('jumlah_perawatan', '<small class="text-danger">', '</small>') ?>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <div class="form-group">
-              <label for="biaya_radiologi">Biaya Radiologi</label>
-              <input type="text" class="form-control" id="dengan-rupiah-radiologi" name="biaya_radiologi" value="0" placeholder="Masukkan biaya radiologi...">
-              <?= form_error('biaya_radiologi', '<small class="text-danger">', '</small>') ?>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-group">
-              <label for="biaya_labor">Biaya Labor</label>
-              <input type="text" class="form-control" id="dengan-rupiah-labor" name="biaya_labor" value="0" placeholder="Masukkan biaya labor...">
-              <?= form_error('biaya_labor', '<small class="text-danger">', '</small>') ?>
-            </div>
-          </div>
+        <div class="form-group">
+          <label for="no_reg">Jenis Tindakan</label>
+          <select class="form-control" id="tindakan" name="tindakan">
+            <option selected="" disabled="">Pilih Jenis Tindakan</option>
+            <option value="Radiologi">Radiologi</option>
+            <option value="Labor">Labor</option>
+            <option value="EKG">EKG</option>
+            <option value="BDRS">BDRS</option>
+            <option value="Pel.Konsul">Pel.Konsul</option>
+            <option value="Konsul Dr Anak">Konsul Dr Anak</option>
+            <option value="OK Sentral">OK Sentral</option>
+            <option value="Fisio">Fisio</option>
+            <option value="Obat">Obat</option>
+            <option value="Visum">Visum</option>
+            <option value="Ass">Ass</option>
+            <option value="Kelahiran">Kelahiran</option>
+            <option value="Tindakan IGD">Tindakan IGD</option>
+            <option value="Retribusi">Retribusi</option>
+          </select>
+          <?= form_error('tindakan', '<small class="text-danger">', '</small>') ?>
         </div>
-
-        <div class="row">
-          <div class="col">
-           <div class="form-group">
-            <label for="biaya_ekg">Biaya EKG</label>
-            <input type="text" class="form-control" id="dengan-rupiah-ekg" name="biaya_ekg" value="0" placeholder="Masukkan biaya EKG...">
-            <?= form_error('biaya_ekg', '<small class="text-danger">', '</small>') ?>
-          </div>
-
-        </div>
-        <div class="col">
-          <div class="form-group">
-            <label for="biaya_bdrs">Biaya BDRS</label>
-            <input type="text" class="form-control" id="dengan-rupiah-bdrs" name="biaya_bdrs" value="0" placeholder="Masukkan biaya BDRS...">
-            <?= form_error('biaya_bdrs', '<small class="text-danger">', '</small>') ?>
-          </div>
-        </div>
-      </div>
 
       <div class="form-group">
         <label for="jumlah_tindakan">Biaya Tindakan</label>
