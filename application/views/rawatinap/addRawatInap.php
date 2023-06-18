@@ -63,6 +63,19 @@
           <?= form_error('jumlah_perawatan', '<small class="text-danger">', '</small>') ?>
         </div>
 
+
+        <div class="form-group">
+          <label for="no_reg">Jenis Tindakan</label>
+          <select class="form-control" id="tindakan" name="tindakan">
+            <option selected="" disabled="">Pilih Jenis Tindakan</option>
+            <option value="Kelas I">Kelas I</option>
+            <option value="Kelas II">Kelas II</option>
+            <option value="Kelas III">Kelas III</option>
+          </select>
+          <?= form_error('tindakan', '<small class="text-danger">', '</small>') ?>
+        </div>
+
+
         <div class="row">
           <div class="col">
             <div class="form-group">
